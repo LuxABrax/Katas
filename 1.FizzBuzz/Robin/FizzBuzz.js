@@ -32,12 +32,3 @@ const fizzBuzz = (number) => {
     }
 }
 
-const checkIfContains = (num, isNumContained) => {
-
-}
-
-fizzBuzz(100);
-let num = 35;
-let nums = num.toString().split('');
-console.log(nums)
-console.log(nums.includes('3'));
