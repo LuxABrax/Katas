@@ -5,6 +5,10 @@ const fizzBuzz = (number) => {
             continue;
         }
         if (i % 3 === 0) {
+            if(i.toString().split().includes('5')) {
+                console.log('FizzBuzz');
+                continue;
+            }
             console.log('Fizz');
             continue;
         }
@@ -16,20 +20,19 @@ const fizzBuzz = (number) => {
         if (i.length >= 2) {
             let nums = i.toString().split();
 
-            if ((nums[0] === '3' || nums[1] === '3') && (nums[0] === '5' || nums[1] === '5')) {
+            if (nums.contains('3') && nums.contains('5')) {
                 console.log('FizzBuzz');
-                continue;
-            }
-
-            nums.forEach(num => {
-                if (num === '3') console.log('Fizz');
-            });
-
+            } else if (nums.contains('3')) console.log('Fizz');
+            
             continue;
         }
 
         console.log(i);
     }
+}
+
+const checkIfContains = (num, isNumContained) => {
+
 }
 
 fizzBuzz(100);
