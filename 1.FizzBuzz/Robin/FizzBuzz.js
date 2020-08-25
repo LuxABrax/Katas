@@ -16,7 +16,7 @@ const fizzBuzz = (number) => {
         if (i.length >= 2) {
             let nums = i.toString().split();
 
-            if ((nums[0] === '3' || nums[1] === '3)') && (nums[0] === '5' || nums[1] === '5')) {
+            if ((nums[0] === '3' || nums[1] === '3') && (nums[0] === '5' || nums[1] === '5')) {
                 console.log('FizzBuzz');
                 continue;
             }
