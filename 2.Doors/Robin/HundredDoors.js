@@ -1,5 +1,5 @@
 let doors = [];
-
+//False is closed, true is open
 const createDoors = (numOfDoors) => {
     for (let i = 1; i <= numOfDoors; i++) {
         doors.push(false);
